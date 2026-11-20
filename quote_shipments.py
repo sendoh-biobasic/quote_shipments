@@ -149,7 +149,7 @@ class FreightApp:
                 html_body = f"""
                 <html><body style="font-family: Calibri;">
                     <p>Hello,</p>
-                    <p>Please send quotation on freight for the following shipment to services@biobasic.com or office@biobasic.com.</p>
+                    <p>Please send quotation on freight for the following shipment to services@biobasic.com and office@biobasic.com.</p>
                     <table>
                         <tr><td><b>FROM/PICK UP:</b></td><td>{from_addr}</td></tr>
                         <tr><td><b>TO/DELIVERY ADDRESS:</b></td><td>{to_addr}</td></tr>
@@ -175,7 +175,6 @@ class FreightApp:
         except Exception as e:
             self.log(f"CRITICAL ERROR: {str(e)}")
             messagebox.showerror("Error", str(e))
-
 
 if __name__ == "__main__":
     root = tk.Tk()
